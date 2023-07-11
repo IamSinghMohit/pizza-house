@@ -1,0 +1,20 @@
+FEATURES:-sdjfkl
+   Authentication:-
+    Emain and password 
+    Google and facebook
+   Products:-
+     Create a product:-
+        Multiple photos can be uploaded at same time 
+        Photos should be sortable before uploading them
+        Admin should be able to see a toast message releated to uploading process or any error
+     Category
+     Deletion
+     Update a product:-
+        Admin should be able to update product its title price and description
+        Adming should be able to provide discount
+     Moniter the product and its performance 
+     Admin should be able to export them as excel sheet or etc
+
+
+
+

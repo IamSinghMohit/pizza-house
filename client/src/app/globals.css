@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Oleo+Script&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (hover: hover) {
+    .button-hover {
+        @apply hover:bg-primary_light hover:text-primary hover:border-primary hover:border-2;
+    }
+}
+input,
+textarea:focus {
+    outline: none;
+}
+nav {
+    font-family: Oleo;
+}
+.eclipse {
+    background: linear-gradient(
+        180deg,
+        rgba(254, 141, 13, 0.27) 0%,
+        rgba(254, 141, 13, 0) 100%
+    );
+    border-radius: 446px;
+    filter: blur(50px);
+}
+/* Navbar  */
+.mobile-nav {
+    clip-path: circle(0% at 103% 0%);
+    opacity: 0;
+}
+.active-nav {
+    clip-path: circle(75%);
+    opacity: 1;
+}
+.nav-span {
+    border-radius: 2px;
+    height: 3px;
+    width: 17px;
+}
+.nav-span-active:nth-child(1) {
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+.nav-span-active:nth-child(3) {
+    transform-origin: left;
+    transform: rotate(-45deg);
+}
+.nav-ul{
+    margin-top: min(20vh,4rem);
+}
