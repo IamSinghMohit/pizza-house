@@ -5,7 +5,7 @@ function SidebarLi({ icon, text }) {
     return (
         <li className="cursor-pointer p-2 relative">
             <Link href={`/admin/${text.toLowerCase()}`}>
-                <button className="p-3 rounded-xl bg-primary text-white active:bg-primary_dark md:flex gap-2 mx-auto button-hover items-center md:w-full">
+                <button className="p-3 rounded-xl bg-primary border-2 border-transparent text-white active:bg-primary_dark md:flex gap-2 mx-auto button-hover items-center md:w-full">
                     {icon}
                     <span className="hidden md:block">{text}</span>
                 </button>

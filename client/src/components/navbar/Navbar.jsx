@@ -25,7 +25,7 @@ function Navbar() {
                     Contact Us
                 </li>
             </ul>
-           <Widgets />
+            <Widgets />
             <Menu />
         </nav>
     );

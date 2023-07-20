@@ -1,3 +1,5 @@
 client/node_modules/
 client/.next/
+prototype/node_modules/
+prototype/.next/
 server/node_modules/

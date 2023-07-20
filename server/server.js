@@ -16,8 +16,8 @@ app.use(passport.initialize());
 
 app.use(cookieParser());
 const corsOption = {
-  credentials: true,
-  origin: ["http://localhost:5173"],
+    credentials: true,
+    origin: ["http://localhost:5173"],
 };
 app.use(cors(corsOption));
 
@@ -27,21 +27,21 @@ app.use(morgan("common"));
 app.use(router);
 
 // HEALTH CHECK
-app.get('/',(req,res) => {
-  res.send('api is healthy')
-})
+app.get("/", (req, res) => {
+    res.send("api is healthy");
+});
 
 /* ===== Error handler ===== */
 app.use(errorHandler);
 
 mongoose
-  .connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
-  })
-  .catch((e) => {
-    console.log(e);
-  });
+    .connect(process.env.MONGODB_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => {
+        app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+    })
+    .catch((e) => {
+        console.log(e);
+    });

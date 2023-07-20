@@ -1,15 +1,16 @@
 "use client";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 function Menu() {
+    const MenuVisible = useSelector((state) => state.user.MenuVisible);
     const [show, setShow] = useState(false);
-    console.log('mobile nav page')
-    return (
-        <div className="md:hidden"> 
+    return MenuVisible && (
+        <div className="md:hidden">
             <button
                 className={`bg-primary ${
                     show && "bg-primary_dark"
-                } text-white p-2 rounded-full text-center z-20`}
+                } text-white p-2 rounded-full text-center z-20 relative`}
                 onClick={() => setShow((prev) => !prev)}
             >
                 <div className="flex flex-col gap-[3px]">
